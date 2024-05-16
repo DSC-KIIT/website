@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Text, Flex, Box, Link, Spacer } from "@chakra-ui/react";
 import SocialMediaBar from "../common/SocialMediaBar";
@@ -25,10 +27,7 @@ const ContactUs = () => {
         </Link>
       </Text>
 
-      <Flex
-        direction={{ base: "column", lg: "row" }}
-        alignItems={{ base: "left", lg: "center" }}
-      >
+      <Flex direction={{ base: "column", lg: "row" }} alignItems={{ base: "left", lg: "center" }}>
         <Box mb={{ base: "3", lg: "0" }}>
           <SocialMediaBar></SocialMediaBar>
         </Box>

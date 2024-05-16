@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Flex,
@@ -16,12 +18,7 @@ import {
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -36,35 +33,19 @@ const Navbar = () => {
         pl={{ base: 8 }}
         align={"center"}
       >
-        <Flex
-          flex={{ base: 1, lg: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", lg: "none" }}
-        >
+        <Flex flex={{ base: 1, lg: "auto" }} ml={{ base: -2 }} display={{ base: "flex", lg: "none" }}>
           <IconButton
             onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
+            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex
-          flex={{ base: 1 }}
-          direction={{ base: "row-reverse", lg: "row" }}
-          alignItems="center"
-          maxWidth={"100%"}
-        >
+        <Flex flex={{ base: 1 }} direction={{ base: "row-reverse", lg: "row" }} alignItems="center" maxWidth={"100%"}>
           <Link href="/">
-            <Image
-              src="/dsc_logo.png"
-              height="10"
-              mr="4"
-              alt="GDSC KIIT Logo"
-            ></Image>
+            <Image src="/dsc_logo.png" height="10" mr="4" alt="GDSC KIIT Logo"></Image>
           </Link>
-          
+
           <Text
             textAlign={useBreakpointValue({ base: "center", lg: "left" })}
             fontWeight={700}
@@ -141,14 +122,7 @@ const DesktopNav = () => {
             </PopoverTrigger>
 
             {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}
-              >
+              <PopoverContent border={0} boxShadow={"xl"} bg={popoverContentBgColor} p={4} rounded={"xl"} minW={"sm"}>
                 <Stack>
                   {navItem.children.map((child) => (
                     <DesktopSubNav key={child.label} {...child} />
@@ -175,11 +149,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
-          <Text
-            transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
-            fontWeight={500}
-          >
+          <Text transition={"all .3s ease"} _groupHover={{ color: "pink.400" }} fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={"sm"}>{subLabel}</Text>
@@ -202,12 +172,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      pl={8}
-      display={{ lg: "none" }}
-    >
+    <Stack bg={useColorModeValue("white", "gray.800")} p={4} pl={8} display={{ lg: "none" }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -230,10 +195,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
+        <Text fontWeight={600} color={useColorModeValue("gray.600", "gray.200")}>
           {label}
         </Text>
         {children && (

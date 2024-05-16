@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Text, Flex, Image, Box, Link } from "@chakra-ui/react";
 
@@ -24,11 +26,7 @@ const GetInvolved = () => {
           Get Involved
         </Text>
 
-        <Text
-          fontSize={{ base: "xl", lg: "2xl" }}
-          pr={{ base: "0", lg: "24" }}
-          mt={{ base: "4", lg: "10" }}
-        >
+        <Text fontSize={{ base: "xl", lg: "2xl" }} pr={{ base: "0", lg: "24" }} mt={{ base: "4", lg: "10" }}>
           You can get stared by either signing up for our{" "}
           <Link color="blue" href="https://forum.dsckiit.in/">
             {" "}
@@ -42,11 +40,7 @@ const GetInvolved = () => {
           .
         </Text>
 
-        <Text
-          fontSize={{ base: "xl", lg: "2xl" }}
-          pr={{ base: "0", lg: "24" }}
-          mt={{ base: "4", lg: "10" }}
-        >
+        <Text fontSize={{ base: "xl", lg: "2xl" }} pr={{ base: "0", lg: "24" }} mt={{ base: "4", lg: "10" }}>
           We conduct in-person meetups twice a month. You can visit this{" "}
           <Link
             color="blue"
@@ -58,11 +52,7 @@ const GetInvolved = () => {
           to check the upcoming events.
         </Text>
 
-        <Text
-          fontSize={{ base: "xl", lg: "2xl" }}
-          pr={{ base: "0", lg: "24" }}
-          mt={{ base: "4", lg: "10" }}
-        >
+        <Text fontSize={{ base: "xl", lg: "2xl" }} pr={{ base: "0", lg: "24" }} mt={{ base: "4", lg: "10" }}>
           Interested in giving a talk ? Have a look at{" "}
           <Link href="/huddle" color="blue">
             Huddle by GDSC KIIT

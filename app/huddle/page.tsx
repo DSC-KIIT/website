@@ -1,24 +1,17 @@
-import type { NextPage } from "next";
+"use client";
+
+import type { Metadata, NextPage } from "next";
 import Head from "next/head";
 import Script from "next/script";
 
-import Navbar from "../src/common/Navbar";
-import Footer from "../src/common/Footer";
+import Navbar from "../../src/common/Navbar";
+import Footer from "../../src/common/Footer";
 
-import ContactUs from "../src/components/ContactUs";
+import ContactUs from "../../src/components/ContactUs";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>GDSC KIIT</title>
-        <meta
-          name="description"
-          content="Huddle by GDSC KIIT is a bi-monthly community event where we host technical talks submitted by the student developers of KIIT."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Navbar></Navbar>
       <br />
       <Script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></Script>

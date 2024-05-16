@@ -1,5 +1,7 @@
+"use client";
+
 import type { NextPage } from "next";
-import Head from "next/head";
+// import Head from "next/head";
 
 import Navbar from "../src/common/Navbar";
 import Footer from "../src/common/Footer";
@@ -11,7 +13,7 @@ import FAQ from "../src/components/FAQ";
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>GDSC KIIT</title>
         <meta
           name="description"
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
         <meta name="author" content="GDSC KIIT"/>
         <meta name="viewport" content="width=width-device,initial-scale=1.0"/>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
 
       <Navbar></Navbar>
       <Landing></Landing>
