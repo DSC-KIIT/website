@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import ChakraProviderClient from "./ChakraProvider";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "GDSC KIIT",
@@ -11,7 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <ChakraProviderClient>{children}</ChakraProviderClient>
+        <Navbar></Navbar>
+        {children}
+        <Footer></Footer>
       </body>
     </html>
   );
