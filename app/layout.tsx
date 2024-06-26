@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import "./globals.css";
+import { NextUIProvider } from "@nextui-org/react";
 
 export const metadata: Metadata = {
   title: "GDSC KIIT",
@@ -10,13 +11,19 @@ export const metadata: Metadata = {
   keywords: "KIIT, GDSC KIIT, Learn and Grow, Developers, Coding Club",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
+      <body className="overflow-x-hidden antialiased text-neutral-800 selection:bg-neutral-800 selection:text-neutral-200 light">
+        <NextUIProvider>
+          <Navbar></Navbar>
+          {children}
+          <Footer></Footer>
+        </NextUIProvider>
       </body>
     </html>
   );
