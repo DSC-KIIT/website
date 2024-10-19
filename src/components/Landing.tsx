@@ -12,7 +12,7 @@ const Landing = () => {
     >
       <Box ml="3">
         <Text fontSize={{ base: "2xl", lg: "4xl" }} fontWeight={700}>
-          Design. Develop. Deliver
+          Design. Develop. Deliver.
         </Text>
 
         <Text
