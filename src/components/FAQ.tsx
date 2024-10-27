@@ -35,23 +35,22 @@ const FAQ = () => {
                 textAlign="left"
                 fontSize={{ base: "lg", lg: "xl" }}
               >
-                What is GDSC KIIT ?
+                What is GDG KIIT ?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            (Straight up from the official Website) Google Developer Student
-            Clubs (GDSC) are community groups for college and university
+            Google Developer Groups (GDGs) are community groups for college and university
             students interested in Google developer technologies. <br></br>
             <br></br>
             Students from all undergraduate or graduate programs with an
-            interest in growing as a developer are welcome. By joining a GDSC,
+            interest in growing as a developer are welcome. By joining a GDG,
             students grow their knowledge in a peer-to-peer learning environment
             and build solutions for local businesses and their community.{" "}
             <br></br>
             <br></br>
-            GDSC KIIT is the official Google Developer Students Club chapter of
+            GDG KIIT is the official Google Developer Group chapter of
             Kalinga Institute of Industrial Technology.
           </AccordionPanel>
         </AccordionItem>
@@ -64,13 +63,13 @@ const FAQ = () => {
                 textAlign="left"
                 fontSize={{ base: "lg", lg: "xl" }}
               >
-                How can GDSC KIIT help me ?
+                How can GDG KIIT help me ?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            GDSC KIIT organizes various in-person and offline events for the
+            GDG KIIT organizes various in-person and offline events for the
             students at KIIT for them get an opportunity to learn from peers.
             These events also help with networking and meeting like-minded peers
             on a similar journey in tech.
@@ -96,7 +95,7 @@ const FAQ = () => {
             process{" "}
             <Link
               color="blue"
-              href="https://forum.dsckiit.in/d/5-gdsc-kiit-recruitment-faq"
+              href="https://forum.dsckiit.in/d/5-GDG-kiit-recruitment-faq"
             >
               {" "}
               here
@@ -120,11 +119,11 @@ const FAQ = () => {
           <AccordionPanel pb={4}>
             You can head over to our{" "}
             <Link
-              href="https://gdsc.community.dev/kalinga-institute-of-industrial-technology-bhubaneswar-1/"
+              href="https://gdg.community.dev/gdg-on-campus-kalinga-institute-of-industrial-technology-bhubaneswar-india/"
               color="blue"
             >
               {" "}
-              gdsc.community.dev
+              gdg.community.dev
             </Link>{" "}
             page and join our chapter with your email, after that, you will
             receive an email whenever we announce an event. If that is too much

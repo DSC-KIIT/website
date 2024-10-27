@@ -20,7 +20,7 @@ const Landing = () => {
           pr={{ base: "0", lg: "24" }}
           mt="10"
         >
-          Google Developer Student Clubs KIIT is a technical club focused on
+          Google Developer Groups on Campus KIIT is a technical club focused on
           building a community of student developers interested in solving
           real-world problems.
         </Text>

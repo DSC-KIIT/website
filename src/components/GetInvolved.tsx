@@ -65,7 +65,7 @@ const GetInvolved = () => {
         >
           Interested in giving a talk ? Have a look at{" "}
           <Link href="/huddle" color="blue">
-            Huddle by GDSC KIIT
+            Huddle by GDG KIIT
           </Link>
         </Text>
       </Box>
