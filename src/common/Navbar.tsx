@@ -64,7 +64,7 @@ const Navbar = () => {
               alt="GDSC KIIT Logo"
             ></Image>
           </Link>
-          
+
           <Text
             textAlign={useBreakpointValue({ base: "center", lg: "left" })}
             fontWeight={700}
@@ -72,7 +72,7 @@ const Navbar = () => {
             mr={{ base: "4", lg: "none" }}
             display={{ base: "none", lg: "block" }}
           >
-            GDSC KIIT
+            GDG KIIT
           </Text>
 
           <Flex display={{ base: "none", lg: "flex" }} ml={10}>

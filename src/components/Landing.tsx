@@ -20,7 +20,7 @@ const Landing = () => {
           pr={{ base: "0", lg: "24" }}
           mt="10"
         >
-          Google Developer Student Clubs KIIT is a technical club focused on
+          Google Developer Groups on Campus KIIT is a technical club focused on
           building a community of student developers interested in solving
           real-world problems.
         </Text>
@@ -30,9 +30,9 @@ const Landing = () => {
           pr={{ base: "0", lg: "24" }}
           mt="10"
         >
-          We host various workshops and hackathons. We also host
-          flagship events from Google such as Android Study Jams, 30 days of
-          Google Cloud, ExploreML etc.
+          We host various workshops and hackathons. We also host flagship events
+          from Google such as Android Study Jams, 30 days of Google Cloud,
+          ExploreML etc.
         </Text>
 
         <Text
